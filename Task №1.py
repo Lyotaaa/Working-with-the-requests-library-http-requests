@@ -1,6 +1,5 @@
 import requests
 
-#Задача №1
 def identifying_smartest(name_heroes):
     url = "https://akabab.github.io/superhero-api/api//all.json"
     respons = requests.get(url=url)
@@ -17,6 +16,5 @@ def identifying_smartest(name_heroes):
             res = f'Самый умный герой: {key} c количеством интеллекта  {value}'
     return print(res)
 
-identifying_smartest('Captain America, Thanos, Hulk')
-
-#Задача №2
+if __name__ == '__main__':
+    identifying_smartest('Captain America, Thanos, Hulk')
